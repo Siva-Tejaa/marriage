@@ -1,8 +1,11 @@
-import React from 'react'
+import React from 'react';
+import quote from "../../assets/quote.png"
 
 const Quotation = () => {
   return (
-    <div className='bg-[#f5dcb2] flex items-center justify-center p-2'>Quotation</div>
+    <div className='bg-[#f4e1c0] flex items-center justify-center p-2'>
+        <img src={quote}/>
+    </div>
   )
 }
 
