@@ -10,7 +10,7 @@ const Body = () => {
 
   return (
     <>
-      <div className='text-white text-center flex flex-col items-center justify-end bg-[center_center] bg-no-repeat bg-[initial] bg-cover h-[100svh]' style={{backgroundImage: `url(${Marriage_Banner})`, textShadow: '1px 1px 3px #0e0e0e'}}>
+      <div className='text-white text-center flex flex-col items-center justify-end bg-[center_center] bg-no-repeat bg-[initial] bg-cover h-[100svh] p-2' style={{backgroundImage: `url(${Marriage_Banner})`, textShadow: '1px 1px 3px #0e0e0e'}}>
         <p>Wedding Invitation For</p>
         <p className='text-3xl laptop:text-4xl' style={{ fontFamily: "'Dancing Script', cursive" }}>Virat Kohli ❤️ Anushka Sharma</p>
         <div className='flex items-center justify-center mb-20 mt-2'>
