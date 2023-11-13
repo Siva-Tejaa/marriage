@@ -15,7 +15,10 @@ const Body = () => {
         <p className='text-3xl laptop:text-4xl' style={{ fontFamily: "'Dancing Script', cursive" }}>Virat Kohli & Anushka Sharma</p>
         <div className='flex items-center justify-center mb-20 mt-2'>
           <img src={left_date_design} alt="LeftDesign" style={{filter:'drop-shadow(1px 1px 3px #0e0e0e)'}}/>
-          <p className='font-medium text-xl px-4' style={{ fontFamily: "'Signika Negative', sans-serif" }}>12.04.2026</p>
+          <div className='flex items-center justify-center flex-col'>
+            <p className='font-medium text-xl px-4' style={{ fontFamily: "'Signika Negative', sans-serif" }}>12.04.2026</p>
+            <p>Saturday</p>
+          </div>
           <img src={right_date_design} alt="RightDesign" style={{filter:'drop-shadow(1px 1px 3px #0e0e0e)'}}/>
         </div>
       </div>
