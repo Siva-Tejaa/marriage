@@ -1,6 +1,9 @@
 import React from 'react';
 
-import Marriage_Banner from "../../assets/Marriage_Banner.jpg"
+import Marriage_Banner from "../../assets/Marriage_Banner.jpg";
+import right_date_design from '../../assets/right_date_design.png';
+import left_date_design from '../../assets/left_date_design.png';
+
 import Quotation from '../Quotation/Quotation';
 
 const Body = () => {
@@ -11,9 +14,9 @@ const Body = () => {
         <p>Wedding Invitation For</p>
         <p className='text-3xl laptop:text-4xl' style={{ fontFamily: "'Dancing Script', cursive" }}>Virat Kohli & Anushka Sharma</p>
         <div className='flex items-center justify-center mb-20 mt-2'>
-          <img src="https://themes.sindevo.com/wedding-bells/images/swirl_left.png" alt="LeftDesign" style={{filter:'drop-shadow(1px 1px 3px #0e0e0e)'}}/>
+          <img src={left_date_design} alt="LeftDesign" style={{filter:'drop-shadow(1px 1px 3px #0e0e0e)'}}/>
           <p className='font-medium text-xl px-4' style={{ fontFamily: "'Signika Negative', sans-serif" }}>12.04.2026</p>
-          <img src="https://themes.sindevo.com/wedding-bells/images/swirl_right.png" alt="RightDesign" style={{filter:'drop-shadow(1px 1px 3px #0e0e0e)'}}/>
+          <img src={right_date_design} alt="RightDesign" style={{filter:'drop-shadow(1px 1px 3px #0e0e0e)'}}/>
         </div>
       </div>
       <Quotation/>
