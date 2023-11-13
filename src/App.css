@@ -1,0 +1,16 @@
+/*---------- Side Scrollbar ----------*/
+
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #d19342;
+    border-radius: 10px;
+  }
+  
+  
+  ::-webkit-scrollbar-track {
+    background: #d4d4d8;
+  }
