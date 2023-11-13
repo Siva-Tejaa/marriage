@@ -5,6 +5,8 @@ import { MdPeopleAlt } from "react-icons/md";
 import { IoMdPhotos } from "react-icons/io";
 import { FaLocationDot } from "react-icons/fa6";
 
+import { Link } from 'react-router-dom';
+
 const Header = () => {
 
     const navItems = [
@@ -42,10 +44,12 @@ const Header = () => {
         <nav className='flex items-center justify-between gap-5 bg-white px-[1.20rem] pt-2 pb-1 rounded-full'>
             {
                 navItems.map((nav) => (
-                    <div key={nav?.id} className={activenav === nav?.name ? 'flex flex-col items-center justify-center cursor-pointer text-[#d19342]' : 'flex flex-col items-center justify-center cursor-pointer text-[#767676]'} onClick={() => setActiveNav(nav?.name)}>
-                        {nav?.icon}
-                        <p className='text-sm'>{nav?.name}</p>
-                    </div>
+                    <Link to={`/${nav?.name.toLowerCase()}`} key={nav?.id}>
+                        <div className={activenav === nav?.name ? 'flex flex-col items-center justify-center cursor-pointer text-[#d19342]' : 'flex flex-col items-center justify-center cursor-pointer text-[#767676]'} onClick={() => setActiveNav(nav?.name)}>
+                            {nav?.icon}
+                            <p className='text-sm'>{nav?.name}</p>
+                        </div>
+                    </Link>
                 ))
             }
         </nav>
