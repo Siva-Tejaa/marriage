@@ -4,7 +4,7 @@ import Marriage_Banner from "../../assets/Marriage_Banner.jpg";
 import right_date_design from '../../assets/right_date_design.png';
 import left_date_design from '../../assets/left_date_design.png';
 
-import Quotation from '../Quotation/Quotation';
+import Quote from './Quote';
 
 const Body = () => {
 
@@ -16,13 +16,13 @@ const Body = () => {
         <div className='flex items-center justify-center mb-20 mt-2'>
           <img src={left_date_design} alt="LeftDesign" style={{filter:'drop-shadow(1px 1px 3px #0e0e0e)'}}/>
           <div className='flex items-center justify-center flex-col'>
-            <p className='font-medium text-xl px-4' style={{ fontFamily: "'Signika Negative', sans-serif" }}>12.04.2026</p>
-            <p>Saturday</p>
+            <p className='font-medium text-xl px-4' style={{ fontFamily: "'Signika Negative', sans-serif" }}>20.03.2026</p>
+            <p>Friday</p>
           </div>
           <img src={right_date_design} alt="RightDesign" style={{filter:'drop-shadow(1px 1px 3px #0e0e0e)'}}/>
         </div>
       </div>
-      <Quotation/>
+      <Quote/>
     </>
     
   )
