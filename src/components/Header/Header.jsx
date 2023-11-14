@@ -40,7 +40,7 @@ const Header = () => {
     const[activenav, setActiveNav] = useState("Home");
 
   return (
-    <header className='fixed bottom-4 flex items-center justify-center w-full' style={{filter:'drop-shadow(1px 1px 3px #0e0e0e)'}}>
+    <header className='fixed bottom-4 flex items-center justify-center w-full z-[1]' style={{filter:'drop-shadow(1px 1px 3px #0e0e0e)'}}>
         <nav className='flex items-center justify-between gap-5 bg-white px-[1.20rem] pt-2 pb-1 rounded-full'>
             {
                 navItems.map((nav) => (
