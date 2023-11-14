@@ -1,6 +1,6 @@
 import React from 'react';
-import right_Small_design from "../../assets/right_Small_design.png";
-import left_Small_design from "../../assets/left_Small_design.png";
+import right_Small_design from "../../assets/right_small_design.png";
+import left_Small_design from "../../assets/left_small_design.png";
 
 const Venue = () => {
   return (
