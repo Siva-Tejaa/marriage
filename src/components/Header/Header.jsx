@@ -11,7 +11,7 @@ const Header = () => {
 
     const location = useLocation();
 
-    {console.log(location.pathname.slice(1) === "")}
+    // {console.log(location.pathname.slice(1) === "")}
 
     // {console.log(location.pathname.slice(1).slice(0, 1).toUpperCase().concat(location.pathname.slice(2)))}
 
