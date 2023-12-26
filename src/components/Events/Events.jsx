@@ -62,7 +62,7 @@ const Events = () => {
         </div>
         <CountDownTimer/>
         <p className='text-base text-center max-w-[40rem]'>With respect and love, we invite guests to attend our wedding reception which will be held on :</p>
-        <div className='flex flex-wrap items-center justify-center gap-8 my-4'>
+        <div className='grid grid-cols-[repeat(1,1fr)] items-center justify-center gap-8 my-4 laptop:grid laptop:grid-cols-[repeat(2,1fr)]'>
 
         {
           eventDetails.map((event) => (

@@ -5,9 +5,16 @@ import { MdPeopleAlt } from "react-icons/md";
 import { IoMdPhotos } from "react-icons/io";
 import { FaLocationDot } from "react-icons/fa6";
 
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Header = () => {
+
+    const location = useLocation();
+
+    {console.log(location.pathname.slice(1) === "")}
+
+    // {console.log(location.pathname.slice(1).slice(0, 1).toUpperCase().concat(location.pathname.slice(2)))}
+
 
     const navItems = [
         {
@@ -37,7 +44,7 @@ const Header = () => {
         }
     ]
     
-    const[activenav, setActiveNav] = useState("Home");
+    const[activenav, setActiveNav] = useState(location.pathname.slice(1) === "" ? "Home" : location.pathname.slice(1).slice(0, 1).toUpperCase().concat(location.pathname.slice(2)));
 
   return (
     <header className='fixed bottom-4 flex items-center justify-center w-full z-[1]' style={{filter:'drop-shadow(1px 1px 3px #0e0e0e)'}}>
